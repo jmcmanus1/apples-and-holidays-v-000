@@ -49,7 +49,7 @@ end
 
 def all_holidays_with_bbq(holiday_supplies_hash)
   holiday_supplies_hash.each do |season, data|
-    data.select {|holiday, supplies| supplies == "BBQ"}
+    data.select {|holiday, supplies| holiday.values == "BBQ"}
     data
     binding.pry
   end
