@@ -50,9 +50,9 @@ end
 def all_holidays_with_bbq(holiday_supplies_hash)
   holiday_supplies_hash.each do |season, holidays|
     holidays.each do |holiday, supply|
+        binding.pry
       if supply == "BBQ"
         puts "#{holiday}"
-        binding.pry
       end
     end
   end
