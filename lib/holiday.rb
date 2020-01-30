@@ -51,7 +51,6 @@ def all_holidays_with_bbq(holiday_supplies_hash)
   holiday_supplies_hash.each do |season, holidays|
     holidays.each do |holiday, supply|
       puts holiday.select{ |holiday, supply| supply == "BBQ"}
-        puts "#{holiday}"
       end
     end
   end
