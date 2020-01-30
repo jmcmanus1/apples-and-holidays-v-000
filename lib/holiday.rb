@@ -52,6 +52,5 @@ def all_holidays_with_bbq(holiday_supplies_hash)
     data.select {|holiday, supplies| supplies == "BBQ"}
     data
     binding.pry
-
-
+  end
 end
