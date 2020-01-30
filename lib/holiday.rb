@@ -28,7 +28,7 @@ def add_supply_to_winter_holidays(holiday_supplies_hash, supply)
   end
 end
 
-def add_supply_to_memorial_day(holiday_supplies_hash, data)
+def add_supply_to_memorial_day(holiday_supplies_hash, supply)
   holiday_supplies_hash.[:spring][:memorial_day] = supply)
       end
     end
@@ -45,10 +45,10 @@ end
 
 def all_supplies_in_holidays(holiday_supplies_hash)
   holiday_supplies_hash.each do |season, holidays|
-    season = season.to_s.capitalize!
+      puts "#{season.to_s.capitalize!}:"
     holidays.each do |holiday, supplies|
       holiday = holiday.to_s.tr("_"," ").split.each {|word| word.capitalize!}.join(" ")
-    puts "#{season}:"
+  
     puts "  #{holiday}: #{supplies.join(", ")}"
     end
   end
