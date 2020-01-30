@@ -20,21 +20,16 @@ def second_supply_for_fourth_of_july(holiday_supplies_hash)
   holiday_supplies_hash[:spring][:memorial_day].join("")
 end
 
-def add_supply_to_winter_holidays(holiday_supplies_hash, data)
-  holiday_supplies_hash.each do |season, holidays|
-    if season == :winter
-      holidays.collect do |key, value|
-      value << ("Balloons")
+def add_supply_to_winter_holidays(holiday_supplies_hash, supply)
+  holiday_supplies_hash[:winter][:christmas] = supply
+  holiday_supplies_hash[:winter][:new_years] = supply
       end
     end
   end
 end
 
 def add_supply_to_memorial_day(holiday_supplies_hash, data)
-  holiday_supplies_hash.each do |season, holidays|
-    if season == :spring
-      holidays.collect do |key, value|
-      value << ("Grill") << ("Table Cloth")
+  holiday_supplies_hash.[:spring][:memorial_day] = supply)
       end
     end
   end
